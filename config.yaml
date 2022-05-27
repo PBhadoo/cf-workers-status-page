@@ -59,7 +59,7 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
     
   - id: telegram-api # unique identifier
     name: Public Telegram API
@@ -70,11 +70,56 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: telegram-api # unique identifier
-    name: Public Telegram API
-    description: 'Public Telegram API (Not HH)' # default=empty
-    url: 'https://api.telegram.org/bot' # URL to fetch
+  - id: five-rapidleech-gq # unique identifier
+    name: five.rapidleech.gq
+    description: 'Rapidleech Server Heroku' # default=empty
+    url: 'https://five.rapidleech.gq' # URL to fetch
     method: GET # default=GET
-    expectStatus: 404 # operational status, default=200
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: ten-rapidleech-gq # unique identifier
+    name: ten.rapidleech.gq
+    description: 'Rapidleech Server Heroku' # default=empty
+    url: 'https://ten.rapidleech.gq' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: twenty-rapidleech-gq # unique identifier
+    name: twenty.rapidleech.gq
+    description: 'Rapidleech Server Heroku' # default=empty
+    url: 'https://twenty.rapidleech.gq' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: eu-frankfurt-rapidleech-gq # unique identifier
+    name: eu-frankfurt.rapidleech.gq
+    description: 'Rapidleech Server Oracle' # default=empty
+    url: 'https://eu-frankfurt.rapidleech.gq' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: eu-amsterdam-rapidleech-gq # unique identifier
+    name: eu-amsterdam.rapidleech.gq
+    description: 'Rapidleech Server Oracle' # default=empty
+    url: 'https://eu-amsterdam.rapidleech.gq' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: www-1337x-to-workers-dev # unique identifier
+    name: www.1337x-to.workers.dev
+    description: '1337x Proxy Server' # default=empty
+    url: 'https://www.1337x-to.workers.dev' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
