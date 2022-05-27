@@ -1,6 +1,6 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  title: 'Hash Hackers Staus'
+  url: 'https://status.hashhackers.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -11,29 +11,70 @@ settings:
   monitorLabelNotOperational: 'Not Operational'
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  dayInHistogramOperational: 'All Good'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+
+  - id: hashhackers-com
+    name: hashhackers-com
+    description: 'Hash Hackers Blog'
+    url: 'https://hashhackers-com'
+    method: GET
+    expectStatus: 200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: decrypt-hashhackers-com # unique identifier
+    name: decrypt.hashhackers.com
+    description: 'Google Drive Sharer/Copy App' # default=empty
+    url: 'https://decrypt.hashhackers.com' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: encrypt-hashhackers-com # unique identifier
+    name: encrypt.hashhackers.com
+    description: 'Google Drive Encrypt Links App' # default=empty
+    url: 'https://encrypt.hashhackers.com' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: decryptionserver-hashhackers-com # unique identifier
+    name: decryptionserver.hashhackers.com
+    description: 'Decryption Server for Google Drive Sharer/Copy App' # default=empty
+    url: 'https://decryptionserver.hashhackers.com' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: bay-index # unique identifier
+    name: Public Bay Index Site
+    description: 'Public Bay Index Site (Not HH)' # default=empty
+    url: 'https://1002esfejqd5pdn06jh689akutte5019btlp0o4o6bcr56uogho1fso.fileportal.org' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+    
+  - id: telegram-api # unique identifier
+    name: Public Telegram API
+    description: 'Public Telegram API (Not HH)' # default=empty
+    url: 'https://api.telegram.org/bot' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
+  - id: telegram-api # unique identifier
+    name: Public Telegram API
+    description: 'Public Telegram API (Not HH)' # default=empty
+    url: 'https://api.telegram.org/bot' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
-
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
