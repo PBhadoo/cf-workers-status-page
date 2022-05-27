@@ -19,7 +19,7 @@ monitors:
   - id: hashhackers-com
     name: hashhackers-com
     description: 'Hash Hackers Blog'
-    url: 'https://hashhackers-com'
+    url: 'https://hashhackers.com'
     method: GET
     expectStatus: 200
     followRedirect: false # should fetch follow redirects, default=false
