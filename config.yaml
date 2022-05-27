@@ -16,7 +16,7 @@ settings:
 
 monitors:
 
-  - id: hashhackers-com
+  - id: hashhackers-com-blog
     name: hashhackers-com
     description: 'Hash Hackers Blog'
     url: 'https://hashhackers.com'
