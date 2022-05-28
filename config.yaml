@@ -55,10 +55,10 @@ monitors:
   - id: bay-index # unique identifier
     name: Public Bay Index Site
     description: 'Public Bay Index Site (Not HH)' # default=empty
-    url: 'https://1002esfejqd5pdn06jh689akutte5019btlp0o4o6bcr56uogho1fso.fileportal.org' # URL to fetch
+    url: 'https://index.simple-program.workers.dev' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
     
   - id: telegram-api # unique identifier
