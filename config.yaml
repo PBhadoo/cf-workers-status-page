@@ -1,5 +1,5 @@
 settings:
-  title: 'Hash Hackers Staus'
+  title: 'HHS'
   url: 'https://status.hashhackers.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -17,7 +17,7 @@ settings:
 monitors:
 
   - id: hashhackers-com-blog
-    name: hashhackers-com
+    name: HH Blog
     description: 'Hash Hackers Blog'
     url: 'https://hashhackers.com'
     method: GET
@@ -26,7 +26,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: decrypt-hashhackers-com # unique identifier
-    name: decrypt.hashhackers.com
+    name: Decrypt
     description: 'Google Drive Sharer/Copy App' # default=empty
     url: 'https://decrypt.hashhackers.com' # URL to fetch
     method: GET # default=GET
@@ -35,7 +35,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: encrypt-hashhackers-com # unique identifier
-    name: encrypt.hashhackers.com
+    name: Encrypt
     description: 'Google Drive Encrypt Links App' # default=empty
     url: 'https://encrypt.hashhackers.com' # URL to fetch
     method: GET # default=GET
@@ -44,7 +44,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
     
   - id: decryptionserver-hashhackers-com # unique identifier
-    name: decryptionserver.hashhackers.com
+    name: DecryptionS
     description: 'Decryption Server for Google Drive Sharer/Copy App' # default=empty
     url: 'https://decryptionserver.hashhackers.com' # URL to fetch
     method: GET # default=GET
@@ -55,6 +55,15 @@ monitors:
   - id: bay-index # unique identifier
     name: Public Bay Index Site
     description: 'Public Bay Index Site (Not HH)' # default=empty
+    url: 'https://thebayindex.gq' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: hindi-index # unique identifier
+    name: Public Hindi Index Site
+    description: 'Public Bay Index Site (Not HH)' # default=empty
     url: 'https://index.simple-program.workers.dev' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -62,7 +71,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
     
   - id: telegram-api # unique identifier
-    name: Public Telegram API
+    name: Telegram API
     description: 'Public Telegram API (Not HH)' # default=empty
     url: 'https://api.telegram.org/bot' # URL to fetch
     method: GET # default=GET
@@ -71,7 +80,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: five-rapidleech-gq # unique identifier
-    name: five.rapidleech.gq
+    name: Rapidleech 5
     description: 'Rapidleech Server Heroku' # default=empty
     url: 'https://five.rapidleech.gq' # URL to fetch
     method: GET # default=GET
@@ -80,7 +89,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: ten-rapidleech-gq # unique identifier
-    name: ten.rapidleech.gq
+    name: Rapidleech 10
     description: 'Rapidleech Server Heroku' # default=empty
     url: 'https://ten.rapidleech.gq' # URL to fetch
     method: GET # default=GET
@@ -89,7 +98,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
     
   - id: twenty-rapidleech-gq # unique identifier
-    name: twenty.rapidleech.gq
+    name: Rapidleech 20
     description: 'Rapidleech Server Heroku' # default=empty
     url: 'https://twenty.rapidleech.gq' # URL to fetch
     method: GET # default=GET
@@ -98,7 +107,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
     
   - id: eu-frankfurt-rapidleech-gq # unique identifier
-    name: eu-frankfurt.rapidleech.gq
+    name: Rapidleech FR
     description: 'Rapidleech Server Oracle' # default=empty
     url: 'https://eu-frankfurt.rapidleech.gq' # URL to fetch
     method: GET # default=GET
@@ -107,7 +116,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
     
   - id: eu-amsterdam-rapidleech-gq # unique identifier
-    name: eu-amsterdam.rapidleech.gq
+    name: Rapidleech AD
     description: 'Rapidleech Server Oracle' # default=empty
     url: 'https://eu-amsterdam.rapidleech.gq' # URL to fetch
     method: GET # default=GET
@@ -116,7 +125,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
     
   - id: www-1337x-to-workers-dev # unique identifier
-    name: www.1337x-to.workers.dev
+    name: 1337x Proxy
     description: '1337x Proxy Server' # default=empty
     url: 'https://www.1337x-to.workers.dev' # URL to fetch
     method: GET # default=GET
