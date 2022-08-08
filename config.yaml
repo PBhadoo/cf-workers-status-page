@@ -18,7 +18,7 @@ monitors:
 
   - id: hashhackers-com-blog
     name: HH Blog
-    description: 'Hash Hackers Blog'
+    description: 'Blog'
     url: 'https://hashhackers.com'
     method: GET
     expectStatus: 200
@@ -27,7 +27,7 @@ monitors:
 
   - id: decrypt-hashhackers-com # unique identifier
     name: Decrypt
-    description: 'Google Drive Sharer/Copy App' # default=empty
+    description: 'Sharer App' # default=empty
     url: 'https://decrypt.hashhackers.com' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -36,7 +36,7 @@ monitors:
 
   - id: encrypt-hashhackers-com # unique identifier
     name: Encrypt
-    description: 'Google Drive Encrypt Links App' # default=empty
+    description: 'Encrypt Links' # default=empty
     url: 'https://encrypt.hashhackers.com' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -53,18 +53,18 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: bay-index # unique identifier
-    name: Public Bay Index Site
-    description: 'Public Bay Index Site (Not HH)' # default=empty
-    url: 'https://thebayindex.gq' # URL to fetch
+    name: theindex.eu.org
+    description: 'The Index' # default=empty
+    url: 'https://theindex.eu.org' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
     
   - id: hindi-index # unique identifier
-    name: Public Hindi Index Site
-    description: 'Public Bay Index Site (Not HH)' # default=empty
-    url: 'https://index.simple-program.workers.dev' # URL to fetch
+    name: simpleprogram.eu.org
+    description: 'Hindi Index' # default=empty
+    url: 'https://simpleprogram.eu.org' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -72,7 +72,7 @@ monitors:
     
   - id: telegram-api # unique identifier
     name: Telegram API
-    description: 'Public Telegram API (Not HH)' # default=empty
+    description: 'Telegram API' # default=empty
     url: 'https://api.telegram.org/bot' # URL to fetch
     method: GET # default=GET
     expectStatus: 404 # operational status, default=200
@@ -80,7 +80,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: five-rapidleech-gq # unique identifier
-    name: Rapidleech 5
+    name: five.rapidleech.gq
     description: 'Rapidleech Server Heroku' # default=empty
     url: 'https://five.rapidleech.gq' # URL to fetch
     method: GET # default=GET
@@ -89,7 +89,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: ten-rapidleech-gq # unique identifier
-    name: Rapidleech 10
+    name: ten.rapidleech.gq
     description: 'Rapidleech Server Heroku' # default=empty
     url: 'https://ten.rapidleech.gq' # URL to fetch
     method: GET # default=GET
@@ -98,7 +98,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
     
   - id: twenty-rapidleech-gq # unique identifier
-    name: Rapidleech 20
+    name: twenty.rapidleech.gq
     description: 'Rapidleech Server Heroku' # default=empty
     url: 'https://twenty.rapidleech.gq' # URL to fetch
     method: GET # default=GET
@@ -132,3 +132,102 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
+
+  - id: cdn-7 # unique identifier
+    name: cdn-7
+    description: '' # default=empty
+    url: 'https://proxy.cdn-7.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: cdn-8 # unique identifier
+    name: cdn-8
+    description: '' # default=empty
+    url: 'https://proxy.cdn-8.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: indiadownloadserver3 # unique identifier
+    name: indiadownloadserver3
+    description: '' # default=empty
+    url: 'https://proxy.indiadownloadserver3.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: indiadownloadserver4 # unique identifier
+    name: indiadownloadserver4
+    description: '' # default=empty
+    url: 'https://proxy.indiadownloadserver4.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: indiadownloadserver5 # unique identifier
+    name: indiadownloadserver5
+    description: '' # default=empty
+    url: 'https://proxy.indiadownloadserver5.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: indiadownloadserver6 # unique identifier
+    name: indiadownloadserver6
+    description: '' # default=empty
+    url: 'https://proxy.indiadownloadserver6.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: europecdn # unique identifier
+    name: europecdn
+    description: '' # default=empty
+    url: 'https://proxy.europecdn.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: qcdn # unique identifier
+    name: qcdn
+    description: '' # default=empty
+    url: 'https://proxy.qcdn.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: cdn-bhadoo-745 # unique identifier
+    name: cdn-bhadoo-745
+    description: '' # default=empty
+    url: 'https://proxy.bhadoo-worldwide-simpleprogram-cdn-server-745.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: indiacdn # unique identifier
+    name: indiacdn
+    description: '' # default=empty
+    url: 'https://proxy.indiacdn.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: antarctica # unique identifier
+    name: antarctica
+    description: '' # default=empty
+    url: 'https://proxy.antarctica.workers.dev/download.php' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 404 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
